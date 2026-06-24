@@ -6,8 +6,8 @@ public:
 
         for(int val: st){
             if(st.find(val-1)==st.end()){
-                int curr = val, cnt = 0;
-                while(st.find(curr)!=st.end()){
+                int curr = val, cnt = 1;
+                while(st.find(curr+1)!=st.end()){
                     curr++;
                     cnt++;
                 }
